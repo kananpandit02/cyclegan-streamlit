@@ -46,7 +46,9 @@ def translate_image(image, direction='A2B'):
 
 # Streamlit UI
 st.title("CycleGAN Image Translator By Kanan Pandit and Partha Mete @RKMVERI 🚀")
-st.markdown("<h4><b>Upload an image and choose translation direction A (Real Image) → B (Ghibli Image):</b></h4>", unsafe_allow_html=True)
+st.markdown("**Upload an image and choose translation direction A (Real Image) → B (Ghibli Image):**")
+
+#st.markdown("<h4><b>Upload an image and choose translation direction A (Real Image) → B (Ghibli Image):</b></h4>", unsafe_allow_html=True)
 #st.markdown("**Upload an image and choose translation direction A(Real Image) B(Ghibli Image):**", unsafe_allow_html=True)
 
 uploaded_file = st.file_uploader("Upload Image", type=['jpg', 'jpeg', 'png'])
