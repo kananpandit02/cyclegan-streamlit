@@ -46,7 +46,7 @@ def translate_image(image, direction='A2B'):
 
 # Streamlit UI
 st.title("CycleGAN Image Translator By Kanan Pandit and Partha Mete @RKMVERI 🚀")
-st.write("Upload an image and choose translation direction:")
+st.write("Upload an image and choose translation direction A(Real Image) B(Ghibli Image):")
 
 uploaded_file = st.file_uploader("Upload Image", type=['jpg', 'jpeg', 'png'])
 direction = st.radio("Select Direction:", ('A2B', 'B2A'))
