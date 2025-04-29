@@ -45,11 +45,11 @@ def translate_image(image, direction='A2B'):
     return fake_img.squeeze(0).cpu()
 
 # Streamlit UI
-st.title("CycleGAN Image Translator 🚀")
+st.title("CycleGAN Image Translator By Kanan Pandit and Partha Mete @RKMVERI 🚀")
 st.write("Upload an image and choose translation direction:")
 
 uploaded_file = st.file_uploader("Upload Image", type=['jpg', 'jpeg', 'png'])
-direction = st.radio("Select Direction:", ('A2B', 'B2A'))
+direction = st.radio("Select Direction:", ('REAL To GHIBLI', 'GHIBLI To REAL'))
 
 if uploaded_file:
     image = Image.open(uploaded_file).convert('RGB')
